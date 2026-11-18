@@ -236,6 +236,19 @@ keys[e.key.toLowerCase()] = false;
 let mobileDirection = "";
 
 
+function startMove(direction){
+
+    mobileDirection = direction;
+
+}
+
+
+function stopMove(){
+
+    mobileDirection = "";
+
+}
+
 
 function moveMobile(direction){
 
@@ -250,46 +263,86 @@ movePlayer();
 }
 
 
-function moveMobile(direction){
-
-for(let i=0;i<8;i++){
+function startMove(direction){
 
 mobileDirection = direction;
 
-movePlayer();
-
-}
-
 }
 
 
-document.getElementById("up").onclick=()=>{
+function stopMove(){
 
-moveMobile("up");
+mobileDirection = "";
 
-};
-
-
-document.getElementById("down").onclick=()=>{
-
-moveMobile("down");
-
-};
+}
 
 
-document.getElementById("left").onclick=()=>{
 
-moveMobile("left");
+// вверх
+
+document.getElementById("up").ontouchstart=()=>{
+
+startMove("up");
 
 };
 
 
-document.getElementById("right").onclick=()=>{
+document.getElementById("up").ontouchend=()=>{
 
-moveMobile("right");
+stopMove();
 
 };
 
+
+
+// вниз
+
+document.getElementById("down").ontouchstart=()=>{
+
+startMove("down");
+
+};
+
+
+document.getElementById("down").ontouchend=()=>{
+
+stopMove();
+
+};
+
+
+
+// влево
+
+document.getElementById("left").ontouchstart=()=>{
+
+startMove("left");
+
+};
+
+
+document.getElementById("left").ontouchend=()=>{
+
+stopMove();
+
+};
+
+
+
+// вправо
+
+document.getElementById("right").ontouchstart=()=>{
+
+startMove("right");
+
+};
+
+
+document.getElementById("right").ontouchend=()=>{
+
+stopMove();
+
+};
 
 
 
