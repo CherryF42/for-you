@@ -166,7 +166,7 @@ let player={
 
     radius:12,
 
-    speed:3
+    speed:10
 
 };
 
@@ -235,6 +235,13 @@ keys[e.key.toLowerCase()] = false;
 
 let mobileDirection = "";
 
+
+
+document.getElementById("up").onclick=()=>{
+
+mobileDirection="up";
+
+};
 
 
 document.getElementById("up").onclick=()=>{
