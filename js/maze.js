@@ -237,37 +237,43 @@ let mobileDirection = "";
 
 
 
+function moveMobile(direction){
+
+for(let i=0;i<8;i++){
+
+mobileDirection = direction;
+
+movePlayer();
+
+}
+
+}
+
+
 document.getElementById("up").onclick=()=>{
 
-mobileDirection="up";
-
-};
-
-
-document.getElementById("up").onclick=()=>{
-
-mobileDirection="up";
+moveMobile("up");
 
 };
 
 
 document.getElementById("down").onclick=()=>{
 
-mobileDirection="down";
+moveMobile("down");
 
 };
 
 
 document.getElementById("left").onclick=()=>{
 
-mobileDirection="left";
+moveMobile("left");
 
 };
 
 
 document.getElementById("right").onclick=()=>{
 
-mobileDirection="right";
+moveMobile("right");
 
 };
 
