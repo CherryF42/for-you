@@ -166,7 +166,7 @@ let player={
 
     radius:12,
 
-    speed:10
+    speed:8
 
 };
 
@@ -235,6 +235,19 @@ keys[e.key.toLowerCase()] = false;
 
 let mobileDirection = "";
 
+
+
+function moveMobile(direction){
+
+for(let i=0;i<8;i++){
+
+mobileDirection = direction;
+
+movePlayer();
+
+}
+
+}
 
 
 function moveMobile(direction){
