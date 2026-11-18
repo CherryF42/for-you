@@ -166,7 +166,7 @@ let player={
 
     radius:12,
 
-    speed:8
+    speed:5
 
 };
 
