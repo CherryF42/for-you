@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабиринт ❤️</title>
+
+    <link rel="stylesheet" href="css/maze.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>❤️ Найди моё сердечко ❤️</h1>
+
+        <div class="top-panel">
+
+            <div>
+                ⏱ Время:
+                <span id="timer">0</span>
+            </div>
+
+            <button id="restart">
+                🔄 Новый лабиринт
+            </button>
+
+        </div>
+
+        <canvas id="maze"></canvas>
+
+        <div class="controls">
+
+            <button id="up">⬆</button>
+
+            <div class="row">
+                <button id="left">⬅</button>
+                <button id="down">⬇</button>
+                <button id="right">➡</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- окно с котиком -->
+
+    <div id="catPopup">
+
+        <div class="popup">
+
+            <h2>😼 Попался!</h2>
+
+            <img src="img/cat.png" alt="Котик">
+
+            <p>
+                Хи-хи ❤️<br>
+                Здесь был секретный проход.
+            </p>
+
+            <button id="continueBtn">
+                Продолжить
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- победа -->
+
+    <div id="winPopup">
+
+        <div class="popup">
+
+            <div class="heart">
+                ❤️
+            </div>
+
+            <h2>
+                Ты нашёл моё сердце!
+            </h2>
+
+            <p>
+                Теперь можно перейти дальше ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/maze.js"></script>
+
+</body>
+
+</html>
